@@ -1,0 +1,32 @@
+From d3cd034514ebd0e906e6ea9d7eb0b373bac52f4d Mon Sep 17 00:00:00 2001
+From: iqbal <wmiqbal@mindmatics.my>
+Date: Wed, 22 Nov 2023 11:58:31 +0800
+Subject: [PATCH] update
+
+---
+ app.py | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 app.py
+
+diff --git a/app.py b/app.py
+new file mode 100644
+index 0000000..faf2ce0
+--- /dev/null
++++ b/app.py
+@@ -0,0 +1,12 @@
++from flask import Flask
++
++app = Flask(__name__)
++
++
++@app.route('/')
++def home():
++    return 'Hello, Flask!'
++
++
++if __name__ == "__main__":
++    app.run(host='0.0.0.0',port=8080)
+\ No newline at end of file
+-- 
+2.39.2 (Apple Git-143)
+
